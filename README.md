@@ -84,7 +84,7 @@ Nenhum pré-requisito é necessário! O portfólio é uma aplicação estática 
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/Rodrigogfernandes/Portifolio-Clean.git
+   git clone https://github.com/Rodrigogfernandes/PortfolioClean.git
    ```
 
    2. **Navegue até o diretório**
