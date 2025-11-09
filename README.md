@@ -61,7 +61,7 @@ Portfólio pessoal moderno e responsivo desenvolvido para apresentar projetos, h
 ## 📁 Estrutura do Projeto
 
 ```
-portifolio-clean/
+portfolio-clean/
 │
 ├── assets/
 │   ├── css/
@@ -87,10 +87,10 @@ Nenhum pré-requisito é necessário! O portfólio é uma aplicação estática 
    git clone https://github.com/Rodrigogfernandes/Portifolio-Clean.git
    ```
 
-2. **Navegue até o diretório**
-   ```bash
-   cd portifolio-clean
-   ```
+   2. **Navegue até o diretório**
+      ```bash
+      cd portfolio-clean
+      ```
 
 3. **Abra o arquivo `index.html` no navegador**
    - Opção 1: Clique duplo no arquivo `index.html`
