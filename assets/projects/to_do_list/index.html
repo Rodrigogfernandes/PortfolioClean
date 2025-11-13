@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Tarefas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>📜Listas de Tarefas</h1>
+        <h5> Você pode usar sua lista sem medo de perder os dados!</h5>
+
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="🔎 Digite uma tarefa e pressione Enter">
+            <button id="addBtn">Adicionar</button>
+            <button id="clearBtn" onclick="limparInput()">Limpar</button>
+        </div>
+
+        <div class="filter-container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="active">Ativas</button>
+                <button class="filter-btn" data-filter="completed">Finalizadas</button>
+            </div>
+
+            <div class="stats">
+                <span id="statsText">0 Tarefas</span>
+            </div>
+        </div>
+
+        <ul id="taskList"></ul>
+
+
+
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>

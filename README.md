@@ -11,6 +11,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+[![rodrigodev.net](https://img.shields.io/badge/rodrigodev.net-gree?style=for-the-badge&logo=rodrigodev&logoColor=white)](https://www.rodrigodev.net/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rodrigogfernandes)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodrigogfernandes/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/rodrigogfernandes1/)
@@ -202,9 +203,11 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 - 📱 Telefone: [+55 (83) 99925-1636](tel:+5583999251636)
 - 📧 Email: [rodrigo.guedes.f@gmail.com](mailto:rodrigo.guedes.f@gmail.com)
 - 📍 Localização: João Pessoa - PB, Brasil
+- 🖥️ Rodrigodev.net [rodrigodev.net](http://www.rodrigodev.net/)
 - 💼 LinkedIn: [rodrigogfernandes](https://www.linkedin.com/in/rodrigogfernandes/)
 - 💻 GitHub: [Rodrigogfernandes](https://github.com/Rodrigogfernandes)
 - 📷 Instagram: [@rodrigogfernandes1](https://www.instagram.com/rodrigogfernandes1/)
+
 
 ## 🙏 Agradecimentos
 
