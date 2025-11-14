@@ -84,18 +84,18 @@ Nenhum pré-requisito é necessário! O portfólio é uma aplicação estática 
 ### Instalação
 
 1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/Rodrigogfernandes/PortfolioClean.git
-   ```
+```bash
+git clone https://github.com/Rodrigogfernandes/PortfolioClean.git
+```
 
-   2. **Navegue até o diretório**
-      ```bash
-      cd portfolio-clean
-      ```
+2. **Navegue até o diretório**
+```bash
+cd portfolio-clean
+```
 
 3. **Abra o arquivo `index.html` no navegador**
-   - Opção 1: Clique duplo no arquivo `index.html`
-   - Opção 2: Use um servidor local (recomendado):
+- Opção 1: Clique duplo no arquivo `index.html`
+- Opção 2: Use um servidor local (recomendado):
      ```bash
      # Usando Python
      python -m http.server 8000
