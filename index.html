@@ -2,42 +2,53 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer. Transformando ideias em experiências digitais memoráveis através de código limpo e design intuitivo.">
+
+    <title>Rodrigo G Fernandes | Desenvolvedor Front-End e UI Designer</title>
+
+    <link rel="canonical" href="https://rodrigodev.net/">
+
+    <meta name="description"
+        content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer. Transformando ideias em experiências digitais memoráveis através de código limpo e design intuitivo.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Rodrigo G Fernandes">
     <meta name="theme-color" content="#2d46b9">
-    
-    <!-- Open Graph / Facebook -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rodrigogfernandes.github.io/">
-    <meta property="og:title" content="Rodrigo G Fernandes | Desenvolvedor Front-End & UI Designer">
-    <meta property="og:description" content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer. Transformando ideias em experiências digitais memoráveis através de código limpo e design intuitivo.">
-    <meta property="og:image" content="https://rodrigogfernandes.github.io/assets/img/perfil.png">
+    <meta property="og:url" content="https://rodrigodev.net/">
+    <meta property="og:title" content="Rodrigo G Fernandes | Desenvolvedor Front-End e UI Designer">
+    <meta property="og:description"
+        content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer. Transformando ideias em experiências digitais memoráveis através de código limpo e design intuitivo.">
+    <meta property="og:image" content="https://rodrigodev.net/assets/img/perfil.png">
     <meta property="og:locale" content="pt_BR">
-    
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://rodrigogfernandes.github.io/">
-    <meta property="twitter:title" content="Rodrigo G Fernandes | Desenvolvedor Front-End & UI Designer">
-    <meta property="twitter:description" content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer. Transformando ideias em experiências digitais memoráveis através de código limpo e design intuitivo.">
-    <meta property="twitter:image" content="https://rodrigogfernandes.github.io/assets/img/perfil.png">
-    
-    <title>Rodrigo G Fernandes | Desenvolvedor Front-End & UI Designer</title>
-    <link rel="canonical" href="https://rodrigogfernandes.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rodrigodev.net/">
+    <meta name="twitter:title" content="Rodrigo G Fernandes | Desenvolvedor Front-End e UI Designer">
+    <meta name="twitter:description" content="Portfólio de Rodrigo G Fernandes, desenvolvedor Front-End e UI Designer.">
+    <meta name="twitter:image" content="https://rodrigodev.net/assets/img/perfil.png">
+
+
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark.css">
-    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg">
     <script>
         // Aplicar tema antes do carregamento para evitar flash
-        (function() {
+        (function () {
             try {
                 const savedTheme = localStorage.getItem('theme');
                 const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
                 const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-                
+
                 if (theme === 'dark') {
                     document.documentElement.classList.add('dark-theme');
                     // Tentar aplicar no body também, se já existir
@@ -45,7 +56,7 @@
                         document.body.classList.add('dark-theme');
                     }
                 }
-            } catch(e) {}
+            } catch (e) { }
         })();
     </script>
 </head>
@@ -75,11 +86,16 @@
             </ul>
             <div class="header-actions">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
-                    <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 3V5M12 19V21M5 12H3M21 12H19M6.34315 6.34315L4.92893 4.92893M19.0711 19.0711L17.6569 17.6569M6.34315 17.6569L4.92893 19.0711M19.0711 4.92893L17.6569 6.34315M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 3V5M12 19V21M5 12H3M21 12H19M6.34315 6.34315L4.92893 4.92893M19.0711 19.0711L17.6569 17.6569M6.34315 17.6569L4.92893 19.0711M19.0711 4.92893L17.6569 6.34315M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
                 <div class="burger">
@@ -109,49 +125,49 @@
                     <a href="#contact" class="btn btn-outline">Fale Comigo</a>
                 </div>
             </div>
-            
+
             <div class="skills">
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                          alt="HTML5" loading="lazy">
-                      
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                          alt="CSS3" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                          alt="JavaScript" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                          alt="TypeScript" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
-                          alt="PHP" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                          alt="MongoDB" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                          alt="Git" loading="lazy">
-      
-                      <img style="width: 45px; height: 45px; background: white; border-radius: 50%;"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                          alt="GitHub" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-                          alt="Figma" loading="lazy">
-    
-                      <img height="45" width="45"
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-                          alt="MySQL" loading="lazy">
-    
-                  </div>
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"
+                    loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"
+                    loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                    alt="TypeScript" loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"
+                    loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB" loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"
+                    loading="lazy">
+
+                <img style="width: 45px; height: 45px; background: white; border-radius: 50%;"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub" loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma"
+                    loading="lazy">
+
+                <img height="45" width="45"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                    alt="MySQL" loading="lazy">
+
+            </div>
         </div>
 
     </section>
@@ -161,7 +177,8 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image reveal">
-                    <img src="assets/img/perfil.png" alt="Rodrigo G Fernandes - Desenvolvedor Front-End e UI Designer" loading="eager">
+                    <img src="assets/img/perfil.png" alt="Rodrigo G Fernandes - Desenvolvedor Front-End e UI Designer"
+                        loading="eager">
                 </div>
                 <div class="about-content reveal">
                     <h2>Sobre <span class="text-gradient">Mim</span></h2>
@@ -172,7 +189,7 @@
                         entregar produtos de alta qualidade.</p>
                     <p>Meu objetivo é transformar ideias em realidade digital, ajudando empresas e empreendedores a
                         alcançarem seus objetivos através de soluções tecnológicas inovadoras e eficientes.</p>
-                   
+
                     <a href="#contact" class="btn btn-primary" style="margin-top: 2rem;">Entre em Contato</a>
                 </div>
             </div>
@@ -191,10 +208,13 @@
                 <!-- Project 1 - Login/Cadastro Moderno -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="assets/projects/login_moderno/login_moderno.gif" alt="Projeto Login/Cadastro Moderno - Interface de autenticação com design responsivo" width="400" height="220" loading="lazy">
+                        <img src="assets/projects/login_moderno/login_moderno.gif"
+                            alt="Projeto Login/Cadastro Moderno - Interface de autenticação com design responsivo"
+                            width="400" height="220" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="assets/projects/login_moderno/login.html" title="Ver Projeto" target="_blank" rel="noopener noreferrer">
+                                <a href="assets/projects/login_moderno/login.html" title="Ver Projeto" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
@@ -206,7 +226,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Rodrigogfernandes/menu_moderno" title="Ver Código" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Rodrigogfernandes/menu_moderno" title="Ver Código"
+                                    target="_blank" rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
@@ -239,10 +260,13 @@
                 <!-- Project 2 - Página de registros de pacientes -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="assets/projects/Registro-de-Pacientes/src/assets/images/image.gif" alt="Projeto Registro de Pacientes - Interface de autenticação com design responsivo" width="400" height="220" loading="lazy">
+                        <img src="assets/projects/Registro-de-Pacientes/src/assets/images/image.gif"
+                            alt="Projeto Registro de Pacientes - Interface de autenticação com design responsivo"
+                            width="400" height="220" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="assets/projects/Registro-de-Pacientes/src/pages/index.html" title="Ver Projeto" target="_blank" rel="noopener noreferrer">
+                                <a href="assets/projects/Registro-de-Pacientes/src/pages/index.html" title="Ver Projeto"
+                                    target="_blank" rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
@@ -254,7 +278,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Rodrigogfernandes/Registro-de-Pacientes" title="Ver Código" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Rodrigogfernandes/Registro-de-Pacientes" title="Ver Código"
+                                    target="_blank" rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
@@ -282,17 +307,22 @@
                                 alt="Electron" loading="lazy">
                         </div>
                         <h3 class="project-title">Registro de Pacientes</h3>
-                        <p class="project-desc">Uma aplicação para registro de pacientes,construido com Electron, javascript, html e css, design dinâmico e elegante, trazendo um design moderno e intuitivo.</p>
+                        <p class="project-desc">Uma aplicação para registro de pacientes,construido com Electron,
+                            javascript, html e css, design dinâmico e elegante, trazendo um design moderno e intuitivo.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Project 2 - Portfólio - Dark Mode -->
+                <!-- Project 3 - Portfólio - Dark Mode -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="assets/projects/portfolio/assets/img/portfolio.gif" alt="Projeto Portfólio Dark Mode - Portfólio pessoal com tema escuro e animações interativas" width="400" height="220" loading="lazy">
+                        <img src="assets/projects/portfolio/assets/img/portfolio.gif"
+                            alt="Projeto Portfólio Dark Mode - Portfólio pessoal com tema escuro e animações interativas"
+                            width="400" height="220" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="assets/projects/portfolio/portfolio.html" title="Ver Projeto" target="_blank" rel="noopener noreferrer">
+                                <a href="assets/projects/portfolio/portfolio.html" title="Ver Projeto" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
@@ -304,7 +334,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Rodrigogfernandes/Portifolio-Dark" title="Ver Código" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Rodrigogfernandes/Portifolio-Dark" title="Ver Código"
+                                    target="_blank" rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
@@ -318,7 +349,7 @@
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
-                             <img height="30" width="30"
+                            <img height="30" width="30"
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                                 alt="HTML5" loading="lazy">
                             <img height="30" width="30"
@@ -329,16 +360,19 @@
                                 alt="JavaScript" loading="lazy">
                         </div>
                         <h3 class="project-title">Portfólio - Dark Mode</h3>
-                        <p class="project-desc">Um portfólio pessoal com tema escuro e animações interativas e dinâmicas para melhorar a experiência do usuário.</p>
+                        <p class="project-desc">Um portfólio pessoal com tema escuro e animações interativas e dinâmicas
+                            para melhorar a experiência do usuário.</p>
                     </div>
                 </div>
-                    <!-- Project 3 - Pagina para Advogados - Animações interativas -->
-                 <div class="project-card reveal">
+                <!-- Project 4 - pagina para academia de jiujitsu - Animações interativas -->
+                <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="assets/projects/adv1/assets/img/adv_1.gif" alt="Projeto Pagina para Advogados" width="400" height="220" loading="lazy">
+                        <img src="assets/projects/jiulog/assets/images/image.gif" alt="Projeto Pagina para Advogados"
+                            width="400" height="220" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="assets/projects/adv1/index.html" title="Ver Projeto" target="_blank" rel="noopener noreferrer">
+                                <a href="assets/projects/jiulog/index.html" title="Ver Projeto" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
@@ -350,7 +384,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Rodrigogfernandes/Pagina-ADV" title="Ver Código" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Rodrigogfernandes/jiulog" title="Ver Código" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
@@ -364,7 +399,7 @@
                     </div>
                     <div class="project-content">
                         <div class="project-tags">
-                             <img height="30" width="30"
+                            <img height="30" width="30"
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                                 alt="HTML5" loading="lazy">
                             <img height="30" width="30"
@@ -375,17 +410,19 @@
                                 alt="JavaScript" loading="lazy">
                         </div>
                         <h3 class="project-title">Pagina para Advogados</h3>
-                        <p class="project-desc">Uma pagina para advogados, com animações interativas para melhorar a experiência do usuário.</p>
+                        <p class="project-desc">Uma pagina para advogados, com animações interativas para melhorar a
+                            experiência do usuário.</p>
                     </div>
                 </div>
-
-                <!-- Project 4 - To Do List - Lista de tarefas com filtros e animações -->
+                <!-- Project 5 - Pagina para Advogados - Animações interativas -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="assets/projects/to_do_list/ToDoList.gif" alt="Projeto To Do List - Lista de tarefas com filtros e animações" width="400" height="220" loading="lazy">
+                        <img src="assets/projects/adv1/assets/img/adv_1.gif" alt="Projeto Pagina para Advogados"
+                            width="400" height="220" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="assets/projects/to_do_list/index.html" title="Ver Projeto" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto EcoMarket no GitHub">
+                                <a href="assets/projects/adv1/index.html" title="Ver Projeto" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
@@ -397,7 +434,61 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Rodrigogfernandes/To-Do-List" title="Ver Código" target="_blank" rel="noopener noreferrer" aria-label="Ver código do projeto EcoMarket no GitHub">
+                                <a href="https://github.com/Rodrigogfernandes/Pagina-ADV" title="Ver Código"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <img height="30" width="30"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                alt="HTML5" loading="lazy">
+                            <img height="30" width="30"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                alt="CSS3" loading="lazy">
+                            <img height="30" width="30"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" loading="lazy">
+                        </div>
+                        <h3 class="project-title">Pagina para Advogados</h3>
+                        <p class="project-desc">Uma pagina para advogados, com animações interativas para melhorar a
+                            experiência do usuário.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 - To Do List - Lista de tarefas com filtros e animações -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/projects/to_do_list/ToDoList.gif"
+                            alt="Projeto To Do List - Lista de tarefas com filtros e animações" width="400" height="220"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="assets/projects/to_do_list/index.html" title="Ver Projeto" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Ver projeto EcoMarket no GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Rodrigogfernandes/To-Do-List" title="Ver Código"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Ver código do projeto EcoMarket no GitHub">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
@@ -422,7 +513,9 @@
                                 alt="JavaScript" loading="lazy">
                         </div>
                         <h3 class="project-title">To Do List</h3>
-                        <p class="project-desc">Aplicação web moderna de gerenciamento de tarefas. Oferece uma interface intuitiva e responsiva com persistência de dados, garantindo que suas tarefas não sejam perdidas.</p>
+                        <p class="project-desc">Aplicação web moderna de gerenciamento de tarefas. Oferece uma interface
+                            intuitiva e responsiva com persistência de dados, garantindo que suas tarefas não sejam
+                            perdidas.</p>
                     </div>
                 </div>
             </div>
@@ -622,7 +715,8 @@
                     </div>
                     <div class="contact-social">
                         <a href="https://www.linkedin.com/in/rodrigogfernandes/" class="social-link" target="_blank"
-                            rel="noopener noreferrer" title="LinkedIn - Perfil profissional de Rodrigo G Fernandes" aria-label="Visite meu perfil no LinkedIn">
+                            rel="noopener noreferrer" title="LinkedIn - Perfil profissional de Rodrigo G Fernandes"
+                            aria-label="Visite meu perfil no LinkedIn">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -638,7 +732,8 @@
                             </svg>
                         </a>
                         <a href="https://github.com/Rodrigogfernandes/" class="social-link" target="_blank"
-                            rel="noopener noreferrer" title="GitHub - Repositórios de Rodrigo G Fernandes" aria-label="Visite meu perfil no GitHub">
+                            rel="noopener noreferrer" title="GitHub - Repositórios de Rodrigo G Fernandes"
+                            aria-label="Visite meu perfil no GitHub">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -648,7 +743,8 @@
                             </svg>
                         </a>
                         <a href="https://www.instagram.com/rodrigogfernandes1/" class="social-link" target="_blank"
-                            rel="noopener noreferrer" title="Instagram - Perfil de Rodrigo G Fernandes" aria-label="Visite meu perfil no Instagram">
+                            rel="noopener noreferrer" title="Instagram - Perfil de Rodrigo G Fernandes"
+                            aria-label="Visite meu perfil no Instagram">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -745,11 +841,16 @@
 
     <!-- Botão de tema fixo para mobile -->
     <button class="theme-toggle theme-toggle-fixed" id="theme-toggle-mobile" aria-label="Alternar tema">
-        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3V5M12 19V21M5 12H3M21 12H19M6.34315 6.34315L4.92893 4.92893M19.0711 19.0711L17.6569 17.6569M6.34315 17.6569L4.92893 19.0711M19.0711 4.92893L17.6569 6.34315M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12 3V5M12 19V21M5 12H3M21 12H19M6.34315 6.34315L4.92893 4.92893M19.0711 19.0711L17.6569 17.6569M6.34315 17.6569L4.92893 19.0711M19.0711 4.92893L17.6569 6.34315M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     </button>
 
