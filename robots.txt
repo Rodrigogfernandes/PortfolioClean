@@ -1,0 +1,11 @@
+# robots.txt gerado automaticamente
+# Permitir todos os crawlers e indicar a localização do sitemap
+User-agent: *
+Disallow:
+
+# Localização do sitemap
+Sitemap: https://rodrigodev.net/sitemap.xml
+Host: rodrigodev.net
+
+# Dicas: adicione regras adicionais para bloquear paths privados, ex:
+# Disallow: /admin/

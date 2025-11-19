@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Sitemap gerado automaticamente -->
+  <url>
+    <loc>https://rodrigodev.net/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://rodrigodev.net/google5911bd8686618c80.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.10</priority>
+  </url>
+  <!-- Adicione outras URLs internas aqui quando estiverem disponíveis (ex: /projects/portfolio/portfolio.html) -->
+</urlset>
