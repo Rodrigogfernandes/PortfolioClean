@@ -7,5 +7,17 @@ Disallow:
 Sitemap: https://rodrigodev.net/sitemap.xml
 Host: rodrigodev.net
 
+# Localização do sitemap
+Sitemap: https://www.rodrigodev.net/sitemap.xml
+Host: www.rodrigodev.net
+
+# Localização do sitemap
+Sitemap: http://rodrigodev.net/sitemap.xml
+Host: rodrigodev.net
+
+# Localização do sitemap
+Sitemap: http://www.rodrigodev.net/sitemap.xml
+Host: www.rodrigodev.net
+
 # Dicas: adicione regras adicionais para bloquear paths privados, ex:
 # Disallow: /admin/
