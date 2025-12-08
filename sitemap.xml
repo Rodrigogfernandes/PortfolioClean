@@ -7,11 +7,47 @@
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
+    <url>
+    <loc>https://www.rodrigodev.net/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+    <url>
+    <loc>http://rodrigodev.net/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+    <url>
+    <loc>http://www.rodrigodev.net/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
   <url>
     <loc>https://rodrigodev.net/google5911bd8686618c80.html</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.10</priority>
   </url>
+   <url>
+    <loc>http://rodrigodev.net/google5911bd8686618c80.html</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.10</priority>
+  </url>
+    <url>
+      <loc>https://www.rodrigodev.net/google5911bd8686618c80.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.10</priority>
+    </url>
+    <url>
+      <loc>http://www.rodrigodev.net/google5911bd8686618c80.html</loc>
+      <lastmod>2025-11-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.10</priority>
+    </url>
   <!-- Adicione outras URLs internas aqui quando estiverem disponíveis (ex: /projects/portfolio/portfolio.html) -->
 </urlset>
