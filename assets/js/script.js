@@ -271,3 +271,238 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+/* -------------------------------------------------
+    CARROSSEL DE PROJETOS - OTIMIZADO C/ LOOP SUAVE
+---------------------------------------------------*/
+
+const track = document.querySelector(".projects-carousel");
+const originalCards = [...document.querySelectorAll(".project-card")];
+const totalOriginalCards = originalCards.length;
+const nextBtn = document.querySelector(".carousel-btn.next");
+const prevBtn = document.querySelector(".carousel-btn.prev");
+const indicatorsContainer = document.querySelector(".carousel-indicators");
+
+let index = 0;
+let cardWidth = 0;
+let visibleCards = 0;
+let autoplayTimer;
+let isDragging = false;
+let startX = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+
+// ... (Funções calculateVisibleCards, setupIndicators, updateIndicators permanecem as mesmas)
+
+/* -------------------------------------------------
+    1) CALCULAR QUANTOS CARDS CABEM NA TELA
+---------------------------------------------------*/
+function calculateVisibleCards() {
+    const containerWidth = document.querySelector(".carousel-wrapper").clientWidth;
+
+    if (containerWidth > 900) visibleCards = 3;
+    else if (containerWidth > 600) visibleCards = 2;
+    else visibleCards = 1;
+
+    if (originalCards.length > 0) {
+        cardWidth = originalCards[0].offsetWidth + 20; 
+    }
+}
+
+/* -------------------------------------------------
+    2) CONFIGURAR INDICADORES
+---------------------------------------------------*/
+function setupIndicators() {
+    indicatorsContainer.innerHTML = "";
+
+    originalCards.forEach((_, i) => {
+        const dot = document.createElement("div");
+        if (i === 0) dot.classList.add("active");
+        indicatorsContainer.appendChild(dot);
+    });
+
+    index = 0;
+    updatePosition();
+}
+
+/* -------------------------------------------------
+    3) ATUALIZA POSIÇÃO E INDICA O ÍNDICE ORIGINAL
+---------------------------------------------------*/
+function updatePosition(animate = true) {
+    if (animate) track.style.transition = ".45s ease";
+    else track.style.transition = "none";
+
+    let moveX = -(index * cardWidth);
+    track.style.transform = `translateX(${moveX}px)`;
+
+    updateIndicators();
+}
+
+function updateIndicators() {
+    const dots = document.querySelectorAll(".carousel-indicators div");
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    // Garante que o índice real sempre esteja entre 0 e totalOriginalCards - 1
+    let realIndex = index % totalOriginalCards;
+    if (realIndex < 0) realIndex += totalOriginalCards;
+
+    if (dots[realIndex]) {
+        dots[realIndex].classList.add("active");
+    }
+}
+
+/* -------------------------------------------------
+    4) HANDLER DO LOOP SUAVE
+---------------------------------------------------*/
+function handleSeamlessLoop() {
+    const lastVisibleIndex = totalOriginalCards - visibleCards;
+
+    // Se o índice for maior ou igual ao número total de cards (após o loop suave)
+    if (index >= totalOriginalCards) {
+        // Resetamos o índice para o primeiro card (0)
+        index = 0; 
+        updatePosition(false); // Move sem animação
+    } 
+    // Se o índice for menor que zero (após o loop suave reverso)
+    else if (index < 0) {
+        // Resetamos o índice para o último card visível
+        index = lastVisibleIndex;
+        updatePosition(false); // Move sem animação
+    }
+}
+
+/* -------------------------------------------------
+    5) BOTÕES - ATUALIZADO
+---------------------------------------------------*/
+nextBtn.onclick = () => {
+    // Se o índice atual for o último card visível, o próximo será o totalOriginalCards
+    // que fará o carrossel se mover para a esquerda, simulando um "clone virtual"
+    if (index === totalOriginalCards - visibleCards) {
+        index = totalOriginalCards;
+    } else {
+        index++;
+    }
+    updatePosition();
+};
+
+prevBtn.onclick = () => {
+    // Se o índice atual for 0, o anterior será -1
+    // que fará o carrossel se mover para a direita, simulando um "clone virtual"
+    if (index === 0) {
+        index = -1; 
+    } else {
+        index--;
+    }
+    updatePosition();
+};
+
+/* -------------------------------------------------
+    6) RESET SEM ANIMAÇÃO
+---------------------------------------------------*/
+// Ao terminar a transição, verificamos se precisamos resetar a posição.
+track.addEventListener("transitionend", handleSeamlessLoop);
+
+/* -------------------------------------------------
+    7) INDICADORES
+---------------------------------------------------*/
+indicatorsContainer.addEventListener("click", (e) => {
+    if (e.target.tagName !== "DIV") return;
+
+    const dots = [...document.querySelectorAll(".carousel-indicators div")];
+    const dotIndex = dots.indexOf(e.target);
+
+    index = dotIndex; 
+    updatePosition();
+});
+
+/* -------------------------------------------------
+    8) AUTOPLAY - ATUALIZADO
+---------------------------------------------------*/
+function startAutoplay() {
+    stopAutoplay();
+    autoplayTimer = setInterval(() => {
+        // Usa a mesma lógica do botão 'next'
+        if (index === totalOriginalCards - visibleCards) {
+             index = totalOriginalCards; // Move para a posição que aciona o loop
+        } else {
+            index++;
+        }
+        updatePosition();
+    }, 3500);
+}
+
+function stopAutoplay() {
+    clearInterval(autoplayTimer);
+}
+
+track.addEventListener("mouseenter", stopAutoplay);
+track.addEventListener("mouseleave", startAutoplay);
+
+/* -------------------------------------------------
+    9) SWIPE + ARRASTAR
+---------------------------------------------------*/
+track.addEventListener("mousedown", dragStart);
+track.addEventListener("mousemove", dragging);
+track.addEventListener("mouseup", dragEnd);
+track.addEventListener("mouseleave", dragEnd);
+
+track.addEventListener("touchstart", dragStart);
+track.addEventListener("touchmove", dragging);
+track.addEventListener("touchend", dragEnd);
+
+function getX(e) {
+    return e.touches ? e.touches[0].clientX : e.clientX;
+}
+
+function dragStart(e) {
+    isDragging = true;
+    startX = getX(e);
+    prevTranslate = -(index * cardWidth); 
+    track.style.transition = "none";
+    stopAutoplay();
+}
+
+function dragging(e) {
+    if (!isDragging) return;
+    const currentX = getX(e);
+    let diff = currentX - startX;
+    currentTranslate = prevTranslate + diff;
+
+    track.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function dragEnd() {
+    if (!isDragging) return;
+    isDragging = false;
+
+    let moved = currentTranslate - prevTranslate;
+
+    // A lógica de arrasto agora também usa os índices -1 e totalOriginalCards
+    if (moved < -60) {
+        // Move para a próxima posição, permitindo o loop suave
+        index = index === totalOriginalCards - visibleCards ? totalOriginalCards : index + 1;
+    } else if (moved > 60) {
+        // Move para a posição anterior, permitindo o loop suave reverso
+        index = index === 0 ? -1 : index - 1;
+    } 
+    
+    // Se não houver movimento suficiente, ele retorna à posição anterior do índice
+    
+    updatePosition();
+    startAutoplay();
+}
+
+/* -------------------------------------------------
+    10) REINICIAR AO REDIMENSIONAR
+---------------------------------------------------*/
+window.addEventListener("resize", () => {
+    calculateVisibleCards();
+    setupIndicators(); 
+    updatePosition(false); 
+});
+
+/* -------------------------------------------------
+    INICIAR
+---------------------------------------------------*/
+calculateVisibleCards();
+setupIndicators();
+startAutoplay();
