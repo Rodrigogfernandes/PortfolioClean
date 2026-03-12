@@ -13,12 +13,11 @@
      --scala: scale(1.2);
  }
 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     user-select: none;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
  body {
      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -442,11 +441,11 @@
      margin-bottom: 1rem;
  }
 
- .section-header p {
-     max-width: 600px;
-     margin: 0 auto;
-     color: var (--gray);
- }
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--gray);
+}
 
  .projects-grid {
      display: grid;
@@ -637,10 +636,10 @@
      margin-bottom: 0.2rem;
  }
 
- .author-info p {
-     font-size: 0.9rem;
-     color: var (--gray);
- }
+.author-info p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
 
 
 
@@ -731,31 +730,31 @@
      font-size: 1.2rem;
  }
 
- .contact-text {
-     h4 {
-         font-size: 1.1rem;
-         margin-bottom: 0.2rem;
-     }
+.contact-text {
+}
 
-     p {
-         font-size: 1rem;
-         color: var(--gray);
-         margin-bottom: 0;
+.contact-text h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
 
-         a {
-             color: var(--primary);
-             text-decoration: none;
-             transition: transform 0.5s ease, color 0.3s ease;
-         }
+.contact-text p {
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 0;
+}
 
-         a:hover {
-             color: var(--secondary);
-             font-size: 1.2rem;
-             font-weight: 600;
-         }
+.contact-text p a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
 
-     }
- }
+.contact-text p a:hover {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 
 
@@ -786,31 +785,30 @@
      transform: translateY(-5px);
  }
 
- .contact-form {
-     background: white;
-     padding: 3rem;
-     border-radius: 15px;
-     box-shadow: var(--shadow);
+.contact-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
 
-     h2 {
-         font-size: 1.7rem;
-         margin-bottom: 1rem;
-         text-align: center;
-         color: var(--primary);
-         font-weight: 800;
-     }
+.contact-form h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primary);
+    font-weight: 800;
+}
 
-     span {
-         color: var(--green);
-     }
+.contact-form span {
+    color: var(--green);
+}
 
-     svg {
-         width: 30px;
-         margin-bottom: -10px;
-         margin-left: -8px;
-     }
-
- }
+.contact-form svg {
+    width: 30px;
+    margin-bottom: -10px;
+    margin-left: -8px;
+}
 
  .form-group {
      margin-bottom: 1.5rem;
@@ -1411,13 +1409,16 @@
  }
 
  /* TRACK */
- .projects-carousel {
-     display: flex;
-     margin: 16px 0;
-     gap: 20px;
-     transition: transform 0.45s ease;
-     padding: 0;
- }
+.projects-carousel {
+    display: flex;
+    margin: 16px 0;
+    gap: 20px;
+    transition: transform 0.45s ease;
+    padding: 0;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+}
 
  .projects-carousel .project-card {
      min-width: 270px;
@@ -1427,29 +1428,34 @@
  }
 
  /* Hover bonito (aplica apenas dentro do carousel) */
- .projects-carousel .project-card:hover {
-     transform: scale(1.02);
- }
+.projects-carousel .project-card:hover {
+    transform: scale(1.02);
+}
 
- .carousel-btn {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     background: #00000070;
-     border: none;
-     color: white;
-     padding: 10px 15px;
-     cursor: pointer;
-     font-size: 22px;
-     border-radius: 10px;
-     z-index: 10;
-     transition: 0.3s;
-     width: 80px;
-     height: 80px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+.projects-carousel.dragging {
+    cursor: grabbing;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00000070;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+    z-index: 10;
+    transition: 0.3s;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
 
  .carousel-btn:hover {
      background: #000000c7;
