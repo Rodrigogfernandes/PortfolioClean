@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    font-family: "Instrument Sans", sans-serif;
+    font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
     background: var(--background);        
     color: var(--text);
     line-height: 1.6;
@@ -198,7 +198,7 @@ textarea {
 
 .logo,
 .footer-logo {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.04em;
@@ -346,7 +346,7 @@ textarea {
 .section-copy h2,
 .section-header h2,
 .contact-info h2 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-size: clamp(2.6rem, 5vw, 4.8rem);
     line-height: 1.02;
     letter-spacing: -0.05em;
@@ -464,7 +464,7 @@ textarea {
 }
 
 .profile-heading h2 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     margin-top: 0.5rem;
     font-size: 2rem;
     line-height: 1;
@@ -500,7 +500,7 @@ textarea {
 
 .metrics-grid strong {
     display: block;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-size: 1.4rem;
     color: var(--primary);
 }
@@ -564,7 +564,7 @@ textarea {
 .service-card h3,
 .process-card h3,
 .project-title {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-size: 1.35rem;
     line-height: 1.1;
 }
@@ -748,7 +748,7 @@ textarea {
     border-radius: 14px;
     background: linear-gradient(135deg, #183153, #2d5b93);
     color: white;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-weight: 700;
 }
 
@@ -789,7 +789,7 @@ textarea {
 }
 
 .contact-form h2 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-size: clamp(1.8rem, 3vw, 2.4rem);
     line-height: 1.05;
     margin-bottom: 1.5rem;
@@ -912,7 +912,7 @@ textarea.form-control {
     inset: 0;
     display: grid;
     place-items: center;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
     font-weight: 700;
     color: var(--primary);
 }
@@ -936,12 +936,12 @@ textarea.form-control {
     transform: translateY(0);
 }
 
-body.dark-theme .sun-icon {
+.dark-theme .sun-icon {
     opacity: 0;
     transform: scale(0.8) rotate(90deg);
 }
 
-body.dark-theme .moon-icon {
+.dark-theme .moon-icon {
     opacity: 1;
     transform: scale(1) rotate(0);
 }
