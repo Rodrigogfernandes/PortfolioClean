@@ -494,8 +494,12 @@ textarea {
 }
 
 .metrics-grid article {
-    padding: 1rem;
+    padding: 0.85rem;
     background: rgba(24, 49, 83, 0.05);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 80px;
 }
 
 .metrics-grid strong {
