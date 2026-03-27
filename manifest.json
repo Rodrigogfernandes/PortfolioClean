@@ -1,0 +1,16 @@
+{
+    "name": "Rodrigo G Fernandes",
+    "short_name": "Rodrigo Dev",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4f7fb",
+    "theme_color": "#f4f7fb",
+    "lang": "pt-BR",
+    "icons": [
+        {
+            "src": "assets/img/perfil.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
