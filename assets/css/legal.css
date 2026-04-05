@@ -1,0 +1,68 @@
+.legal-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.8;
+}
+
+.legal-container h1 {
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+.legal-container h2 {
+    font-family: "Aptos Display", "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.legal-container p {
+    margin-bottom: 1.2rem;
+    color: var(--muted);
+}
+
+.legal-container ul, .legal-container ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--muted);
+}
+
+.legal-container li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: transform var(--transition);
+}
+
+.legal-back-btn:hover {
+    transform: translateX(-5px);
+}
+
+.legal-last-update {
+    display: block;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--muted);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .legal-container {
+        margin: 2rem auto;
+    }
+}
